@@ -14,6 +14,16 @@ body, html {
 	height: 100%;
 }
 
+/*=========================[ Navbar/Hamburger Menu ]============================*/
+
+.navbar {
+  border-color: transparent;
+}
+
+.nav li:hover {
+  background-color: black;
+}
+
 /*=========================[ Title Screen ]============================*/
 
 .title {
@@ -96,7 +106,7 @@ h3 {
   font-family: 'Open Sans', sans-serif;
   padding-left: 10%;
   padding-right: 10%;
-  padding-bottom: 25%;
+  padding-bottom: 15%;
   text-align: center;
 }
 
@@ -111,9 +121,9 @@ h3 {
 .center-icon { text-align: center; }
 .center-icon .fontawesome-icon { float: none !important; }
 
-/*============================[ Projects ]===============================*/
+/*============================[ Portfolio ]===============================*/
 
-.projects {
+.portfolio {
   /* The image used */
   background: linear-gradient(rgba(250,250,250, 0.35), rgba(250,250,250, 0.35)),
                 rgba(250,250,250, 0.35) url("desk.jpg") no-repeat center;
@@ -123,13 +133,83 @@ h3 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 25%;
-  padding-bottom: 25%;
 }
 
-tr {
-  border-style: hidden;
+.table {
+  display: flex;
 }
+
+
+td {
+  border-top: transparent;
+}
+
+table p {
+  background-color: white;
+}
+
+
+
+
+
+
+
+.project {
+    margin: 10%;
+    text-align:center;
+    position:relative;
+  }
+
+.project_label {
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #34495E;
+    padding: 5%;
+    position: absolute;
+    top: 5%;
+    left: 30%;
+  }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: white;
+}
+
+.overlay p {
+  padding: 5%;
+}
+
+.project {
+  position: relative;
+}
+
+.project:hover .overlay {
+  opacity: 0.7;
+}
+
+.btn {
+    opacity: 1;  
+}
+
+.btn-info {
+    color: #fff;
+    background-color: #5bc0de;
+    border-color: #46b8da;
+    top: 450%;
+    left: 25%;
+    position: absolute;
+}
+
+
+
 
 /*============================[ Contact ]===============================*/
 
@@ -149,6 +229,19 @@ tr {
 
 .contact ul {
   list-style-type: none;
+}
+
+address {
+  margin-bottom: 0;
+}
+
+.contact li {
+  padding-bottom: 5%;
+  display: flex;
+}
+
+.fa-lg {
+  padding-right: 5%;
 }
 
 /*============================[ Footer ]===============================*/

@@ -25,6 +25,37 @@
 	}
 }
 
+@media only screen and (max-width: 499px) {
+	.services h1 {
+		margin-top: 15%;
+	}
+
+	.portfolio h1 {
+		margin-top: 15%;
+	}
+
+	tr {
+	  border-style: none;
+	  display: grid;
+	}
+
+	.contact {
+		padding-left: 10%;
+	}
+
+	.contact h1 {
+		padding-left: 15%;
+	}
+
+	.project_label {
+		font-size: 20px;
+	}
+
+	.btn-info {
+		top: 400%;
+	}
+}
+
 
 /*  Tablet View  */
 @media only screen and (min-width: 500px) {
@@ -45,6 +76,24 @@
 		max-width: 25%;
   		max-height: 25%;
 	}
+
+	.contact {
+		padding-left: 20%;
+	}
+
+	.contact li {
+		font-size: 20px;
+	}
+
+	.contact h1 {
+		padding-left: 25%;
+	}
+
+	.project_label {
+		font-size: 22px;
+	}
+
+	
 }
 
 /*  Laptop View  */
