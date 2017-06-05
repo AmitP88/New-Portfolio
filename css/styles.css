@@ -200,23 +200,29 @@ table p {
   background-color: white;
 }
 
+.overlay h2 {
+  color: black;
+}
+
 .overlay a {
   text-decoration: none;
   color: white;
 }
 
+.project:hover .overlay {
+  opacity: 1;
+}
+
 .overlay p {
   padding: 5%;
   font-weight: bold;
+  color: black;
 }
 
 .project {
   position: relative;
 }
 
-.project:hover .overlay {
-  opacity: 0.8;
-}
 
 .btn {
     opacity: 1;  

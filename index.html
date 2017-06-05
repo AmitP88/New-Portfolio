@@ -6,19 +6,18 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Amit Patel - Front End Web Developer</title>
 
+		<script async src="https://use.fontawesome.com/4c87236fa3.js"></script>		
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
-		<script src="https://use.fontawesome.com/4c87236fa3.js"></script>
 		<link rel="stylesheet" href="css/styles.css">
 		<link rel="stylesheet" href="css/media_queries.css">
 	</head>
+
 	<body>
 		
 	<header>
-
 		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 			<div class="container">
 	        <div class="navbar-header">
@@ -48,9 +47,8 @@
 <!-- 	==================== Title Screen ===================== 	-->		
 
 			<div class="row title typing" id="home">
-
 					<h1>Amit Patel</h1>
-					<h3 id="typing" class="typing">&lt;Front End Developer&gt;</h3>			
+					<h3 id="typing" class="typing">&lt;Front End Developer&gt;</h3>
 			</div>
 
 <!-- 	==================== Introduction ===================== 	-->
@@ -195,43 +193,36 @@
 
 		</div>
 
-			<footer class="text-center">
-
-				Designed and Developed by Amit Patel 2017 &#9400;
-
-			</footer>	
-
-
-
-
+		<footer class="text-center">
+			Designed and Developed by Amit Patel 2017 &#9400;
+		</footer>
 	</body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-<script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
-
 <script src="https://cdn.jsdelivr.net/jquery.typeit/4.2.3/typeit.min.js"></script>
+
+<script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
 
 <script async type="text/javascript">
 
-	$('#typing').typeIt({
-     speed: 90,
-     loop: true,
-     loopDelay: 5000
-	});
+	$(document).ready(function() {
+		$('#typing').typeIt({
+	     speed: 90,
+	     loop: true,
+	     loopDelay: 5000
+		});
 
+		$(".navbar-nav li a").click(function(event) {
+	    if (!$(this).parent().hasClass('dropdown'))
+	        $(".navbar-collapse").collapse('hide');
+		});
 
-	
-
-	$(".navbar-nav li a").click(function(event) {
-    if (!$(this).parent().hasClass('dropdown'))
-        $(".navbar-collapse").collapse('hide');
-	});
-
-	$(document).click(function(e) {
-		if (!$(e.target).is('a')) {
-	    	$('.collapse').collapse('hide');	    
-	    }
+		$(document).click(function(e) {
+			if (!$(e.target).is('a')) {
+		    	$('.collapse').collapse('hide');	    
+		    }
+		});
 	});
 
 </script>
