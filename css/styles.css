@@ -44,9 +44,13 @@ body, html {
 	color: white;
 }
 
+.title h1 {
+  font-size: 40px;
+  width: 100%;
+}
+
 .title h3 {
   -webkit-transform: translate(-50%,50%);
-  transform: translate(0,370px);
   left: -50%;
 }
 
@@ -69,6 +73,10 @@ h3 {
 }
 
 /*============================[ Introduction ]===============================*/
+
+.intro h1 {
+  font-size: 40px;
+}
 
 .intro {
   /* The image used */
@@ -96,6 +104,10 @@ h3 {
 }
 
 /*============================[ Services ]===============================*/
+
+.services h1 {
+  font-size: 40px;
+}
 
 .services h3 {
   padding-top: 10%;
@@ -133,6 +145,11 @@ h3 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.portfolio h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 40px;
 }
 
 .table {
@@ -183,8 +200,14 @@ table p {
   background-color: white;
 }
 
+.overlay a {
+  text-decoration: none;
+  color: white;
+}
+
 .overlay p {
   padding: 5%;
+  font-weight: bold;
 }
 
 .project {
@@ -192,7 +215,7 @@ table p {
 }
 
 .project:hover .overlay {
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 .btn {
@@ -203,12 +226,97 @@ table p {
     color: #fff;
     background-color: #5bc0de;
     border-color: #46b8da;
-    top: 450%;
     left: 25%;
     position: absolute;
 }
 
+/**************************
+  DEFAULT BOOTSTRAP STYLES
+**************************/
 
+.btn {
+  font-family: 'Orbitron', sans-serif;
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 10px 16px;
+}
+  
+.btn-lg {
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 6px;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #428bca;
+  border-color: #357ebd;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  color: #fff;
+  background-color: #3276b1;
+  border-color: #285e8e;
+}
+
+/***********************
+  RAISED BUTTONS
+************************/
+.btn-primary.raised {
+    box-shadow: 0 3px 0 0 #007299;
+}
+.btn-primary.raised:active, .btn-primary.raised.active {
+    background: #33a6cc;
+    box-shadow: none;
+    margin-bottom: -3px;
+    margin-top: 3px;
+}
+
+/***********************
+  CUSTON BTN VALUES
+************************/
+
+.btn {
+    padding: 14px 24px;
+    border: 0 none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+
+.btn-primary {
+    background: #0099cc;
+    color: #ffffff;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background: #33a6cc;
+}
+.btn-primary:active, .btn-primary.active {
+    background: #007299;
+    box-shadow: none;
+}
 
 
 /*============================[ Contact ]===============================*/
@@ -238,6 +346,10 @@ address {
 .contact li {
   padding-bottom: 5%;
   display: flex;
+}
+
+.contact a {
+  color: black;
 }
 
 .fa-lg {
