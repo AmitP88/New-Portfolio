@@ -57,8 +57,9 @@ table p{background-color:white;}
 rgba(247,247,247, 0.53) url("phone.jpg") no-repeat center;background-attachment:fixed;background-position:center;background-repeat:no-repeat;background-size:cover;padding-top:10%;padding-bottom:10%;}
 .contact ul{list-style-type:none;}
 address{margin-bottom:0;}
-.contact li{padding-bottom:5%;display:flex;}
+.contact li{padding-bottom:5%;padding-left: 12%;display:flex;}
 .contact a{color:black;}
+i:hover{color: dodgerblue;}
 .fa-lg{padding-right:5%;}
 footer{height:100px;padding-top:50px;padding-bottom:100px;padding-left:25px;padding-right:25px;background-color:#292929;color:#ffffff;}
 .back-top{margin:0 auto;margin-bottom:.6em;text-align:center;width:200px;}
